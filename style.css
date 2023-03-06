@@ -1,131 +1,99 @@
-body{
-  background: black;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <a href="https://www.youtube.com/">Home</a>
+        <a href="https://www.youtube.com/">Register</a>
+        <a href="https://www.youtube.com/">Member card</a>
+        <a href="https://www.youtube.com/">Schedule</a>
+        <a href="https://www.youtube.com/">Trainers</a>
+        <a href="https://www.youtube.com/">Our Rules</a>
+        <a href="https://www.youtube.com/">Contact</a>
+    </div>
+
+    <section class="container">
+        <img src="https://media.istockphoto.com/id/871070868/es/foto/entrenamiento-de-ejercicio-de-mujer-en-la-%C3%BAltima-hora-de-fitness-gimnasio-relajarse-manteniendo.jpg?s=612x612&w=0&k=20&c=E2V52gy9M51fryw9m_nvsF_NVZ-P6QMgioqRdGCj-TE=" class="img" alt="gym">
+    
+        <h1>AbsoluteFit</h1>
+    
+        <h2>IT'S YOUR LIFESTYLE</h2>
+    </section>
+
+    <h3 strong>Registration form</h3>
+
+    <form action="https://teatinoswebpage.com">
+        <!-- <fieldset> -->
+            <p>
+                <label for="name">Name
+                    <input id="name" name="name"/>
+                </label>
+            </p>
+
+            <p>
+                <label for="forms">Username
+                    <input id="username" name="username"/>
+                </label>
+            </p>
+
+            <p>
+                <label for="forms">Password
+                    <input id="password" name="password"/>
+                </label>
+            </p>
+
+            <p>
+                <label for="forms">Repeat password
+                    <input id="repeatpassword" name="repeatpassword"/>
+                </label>
+            </p>
+
+            <p>
+                <label for="forms">Email
+                    <input id="email" name="email"/>
+                </label>
+            </p>
+
+            <p>
+                <label for="forms">Gender
+                    <p>
+                        <label><input type="radio" id="male" name="gender" value="male" checked/> Male</label>
+                        <label><input type="radio" id="female" name="gender" value="male"/> Female</label>
+                    </p>
+                </label>
+            </p>
+
+            <p>
+                <label for="forms">Telephone
+                    <input id="telephone" name="telephone"/>
+                </label>
+            </p>
+
+            <p>
+                <label for="forms">Country
+                    <select>
+                        <option value="">Please choose a country</option>
+                        <option value="romania">Romania</option>
+                        <option value="spain">Spain</option>
+                    </select>
+                </label>
+            </p>
+
+            <p>
+                <label for="forms">
+                    <input type="submit" id="but" name="but" value="Hey"/>
+                </label>
+            </p>
+            
+        <!-- </fieldset> -->
+    </form>
 
 
-.container{
-  width:800px;
-  height: 500px;
-  overflow: hiedden;
-  position: relative;
-  margin: 200px auto;
-  border-radius: 10px;
-  box-shadow: 5px 8px 50px orange;
-  
-}
-.container img{
-    width: 800px;
-	height:500px;
-    border-radius: 5px;
-  
-}
-
-.container h1{
-font-size: 3.5rem;
-color: white;
-position: absolute;
-top: 40%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-
-.container h2{
-font-size: 1.5rem;
-color: white;
-position: absolute;
-top: 55%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-/*Styles for header */
-
-h1, h2, h3 {
-  color: white;
-  text-align: center;
-}
-
-h1 {
-  font-size: 3.5rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-  font-family: monospace;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-
-/*Head*/
-header{
-width: 100%;
-height: 600px;
-background-size: cover;
-  position: relative;
-  
-}
-
-/*Buttons header*/
-a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    text-decoration: none;
-    background-color: orange;
-    color: #fff;
-  	
-    border-radius: 5px;
-}
-
-/* Registration form */
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-}
-
-/* Registration form */
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"],
-
-
-/*Country*/
-select {
-    display: block;
-    width: 100%;
-    padding: 5px;
-    font-size: 1rem;
-    margin-bottom: 30px;
-    border-radius: 0,5px;
-    border: 2px solid #ccc;
-    box-sizing: border-box;
-}
-
-/*Gender*/
-input[type="radio"],
-input[type="checkbox"] {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-/* Style- send button */
-input[type="submit"] {
-    background-color: orange;
-    color: #fff;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-}
+</body>
+</html>
