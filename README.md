@@ -1,10 +1,10 @@
 # wad-project
 
-Title: Teatinos Gym Page
+Title: AbsoluteFit Page
 
-Project Description: Registration web page for a gym company called "Teatinos".
+Project Description: Registration web page for a gym company called "AbsoluteFit".
 
 Team members:
   - Adrián Lábaro Herrera Trillo (ERASMUS+)
   - Ana Peinado Nuno (ERASMUS+)
-  - Juan Lucas Gordillo Hernández (ERASMUS+)
+  - Javier Linde (ERASMUS+)
