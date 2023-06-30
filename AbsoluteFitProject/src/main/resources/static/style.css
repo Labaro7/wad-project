@@ -1,0 +1,838 @@
+/* --------------------------------------- GENERAL  ---------------------------------------  */
+* {
+  border: 0px solid red;
+}
+
+body {
+  background: rgb(26, 26, 26);
+  height: 3050px;
+  overflow-x: hidden;
+  margin: 10px;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+
+/* --------------------------------------- TOP  ---------------------------------------  */
+.container {
+  margin: -10px;
+  height: 605px;
+}
+
+.container img {
+  height: 600px;
+  width: 1200px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.container h1 {
+  position: absolute;
+  top: 210px;
+  left: 660px;
+  font-size: 40px;
+  color: #800040;
+  font-family: 'Newsreader';
+}
+
+.container h2 {
+  position: absolute;
+  top: 275px;
+  left: 695px;
+  font-size: 15px;
+  color: #800040;
+  font-family: "Newsreader";
+}
+
+.loginForm {
+  position: relative;
+  top: -450px;
+  width: 38%;
+  margin: auto;
+}
+
+.formu {
+  position: relative;
+  top: 0px;
+  background-color: #F1B75F;
+  border-radius: 15px;
+  height: 150px;
+  width: 450px;
+  margin: auto;
+}
+
+.userPass {
+  position: relative;
+  width: 150px;
+  left: 16px;
+  border: 0px solid purple;
+}
+
+.user-input,
+.password-input {
+  position: relative;
+  font-size: 17px;
+  font-family: "Newsreader";
+  width: 89.4%;
+  padding: 13px;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: black;
+  font-family: Mplus 1p;
+  opacity: 60%;
+  font-family: Mplus 1p;
+  font-size: 15px;
+}
+
+.boton {
+  position: relative;
+  width: 90px;
+  top: -35px;
+  margin-left: auto;
+  border: 0px solid red;
+}
+
+#signup,
+#login {
+  background-color: #800040;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Newsreader";
+  padding: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#signup:hover, #login:hover {
+  background-color: #ac0056;
+  color: white;
+  cursor: pointer;
+}
+
+.header {
+  width: 10%;
+  height: 600px;
+  background-size: cover;
+  position: relative;
+}
+
+.button-container {
+  width: 1200px;
+  position: relative;
+  top:-608px;
+  margin: auto;
+}
+
+div {
+  text-align: center;
+  font-weight: bold;
+  /*Negrita*/
+}
+
+/*BOTONES ARRIBA*/
+a:hover {
+  background-color: #ac0056;
+  color: white;
+  transform: scale(1.1);
+}
+
+a.active {
+  background-color: #ac0056;
+  color: white;
+  transform: scale(1.1);
+}
+
+a {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #800040;
+  color: white;
+  text-shadow: #800040 0 0 3px;
+  border-radius: 10px;
+  transition: all 0.05s ease-in-out;
+}
+
+.welcome {
+  position: relative;
+  top: 158px;
+  background-color:  #F1B75F;
+  border-radius: 15px;
+  height: 120px;
+  width: 300px;
+  margin: auto;
+}
+
+.content {
+  color: #800040;
+  font-size: 27px;
+  position: relative;
+  top: 30px;
+  display:inline-flex;
+  text-align: center;
+}
+
+.welcomeH3{
+  color: #800040;
+  position: relative;
+  top: 10px;
+}
+/* --------------------------------------- PRICES  ---------------------------------------  */
+.fondoprices {
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  filter: blur(40px);
+  background-color: white;
+  width: 1100px;
+  height: 500px;
+}
+
+#img1, #img2, #img3 {
+  display: inline-block;
+  width: 340px;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 180px;
+}
+
+#img1 img, #img2 img, #img3 img {
+  height: 100%;
+  transition: 1s;
+}
+
+#img1 img:hover {
+  transform: translate(2%);
+  filter: brightness(40%);
+}
+
+#img1 {
+  position: absolute;
+  left: 10px;
+}
+
+#img2 {
+  position: absolute;
+  left: 390px;
+}
+
+#img3 {
+  position: absolute;
+  right: 10px;
+}
+
+#img2 img:hover {
+  transform: translate(2%);
+  filter: brightness(40%);
+}
+
+#img3 img:hover {
+  transform: translate(2%);
+  filter: brightness(40%);
+}
+
+.title1, .title2, .title3 {
+  font-size: 25px;
+}
+
+.text-img1 {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  color: white;
+}
+
+.text-img2 {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  color: white;
+}
+
+.text-img3 {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  color: white;
+}
+
+.prices {
+  position: relative;
+  top: 5px;
+  height: 620px;
+  width: 1200px;
+  margin: auto;
+}
+
+
+/* --------------------------------------- SCHEDULE  ---------------------------------------  */
+.tabl {
+  position: relative;
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.table {
+  padding-top: 110px;
+  position: relative;
+  top: 5px;
+  height: 510px;
+  width: 1200px;
+  margin: auto;
+}
+
+.body {
+  color: white;
+  position: absolute;
+  background-color: #8000405c;
+}
+
+.head {
+  border-bottom: 1px solid #cccccc92;
+  background-color: #800040b5;
+  color: white;
+  position: relative;
+  margin: auto;
+}
+
+table tr {
+  height: 55px;
+}
+
+tr:nth-of-type(6) td {
+  height: 10px
+}
+
+select {
+  font-family: 'Calibri';
+  font-size: 17px;
+  color: #58022d;
+}
+
+.divs {
+  position: relative;
+  line-height: 15px;
+}
+
+.sendReset {
+  position: relative;
+  left: 65%;
+  top: 92%;
+}
+
+.sendReset input[type="submit"],
+.sendReset input[type="reset"] {
+  padding: 0.5rem 0.55rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-inline: 4px;
+}
+
+.sendReset input[type="submit"] {
+  background-color: #740621;
+}
+
+.sendReset input[type="submit"]:hover {
+  background-color: #740621;
+}
+
+.sendReset input[type="reset"] {
+  background-color: #740621;
+}
+
+.sendReset input[type="reset"]:hover {
+  background-color: #c62828;
+}
+
+
+/* --------------------------------------- TRAINERS  ---------------------------------------  */
+.trainers {
+  position: relative;
+  top: 5px;
+  width: 1200px;
+  height: 620px;
+  margin: auto;
+  color: rgb(17, 17, 17);
+}
+
+.circulo {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  float: left;
+  border-radius: 60%;
+  /* Para crear un borde circular alrededor de la imagen */
+  background-color: white;
+  /* Para establecer un fondo blanco en el círculo */
+  overflow: hidden;
+  /* Para ocultar cualquier parte de la imagen que se salga del círculo */
+}
+
+.circulo .train {
+  width: 80%;
+  /* Para que la imagen se ajuste al tamaño del círculo */
+  height: auto;
+
+}
+
+.train {
+  position: relative;
+  top: 20px;
+  max-height: 150px;
+  max-width: 170px;
+}
+
+.bloque1 {
+  position: relative;
+  left: 15%;
+  top: -420px;
+  background-color: #F1B75F;
+  border-radius: 10px;
+  height: 110px;
+  width: 300px;
+  opacity: 95%;
+  transition: 1s;
+}
+
+.fondotrainers {
+  position: relative;
+  filter: blur(40px);
+  background-color: white;
+  width: 1100px;
+  height: 500px;
+}
+
+.trainer1 {
+  position: absolute;
+  left: 115px;
+  top: 25px;
+  float: right;
+  text-align: right;
+}
+
+.bloque1:hover {
+  transform: translate(20px, 5px);
+  filter: brightness(108%);
+}
+
+.bloque2 {
+  position: relative;
+  left: 15%;
+  top: -370px;
+  background-color: #F1B75F;
+  border-radius: 10px;
+  height: 110px;
+  width: 300px;
+  opacity: 95%;
+  transition: 1s;
+}
+
+.trainer2 {
+  position: absolute;
+  left: 115px;
+  top: 25px;
+  float: right;
+  text-align: right;
+}
+
+.bloque2:hover {
+  transform: translate(20px, 5px);
+  filter: brightness(108%);
+}
+
+.bloque3 {
+  position: relative;
+  top: -320px;
+  left: 15%;
+  background-color: #F1B75F;
+  border-radius: 10px;
+  height: 110px;
+  width: 300px;
+  opacity: 95%;
+  transition: 1s;
+}
+
+.trainer3 {
+  position: absolute;
+  left: 125px;
+  top: 25px;
+  float: right;
+  text-align: right;
+}
+
+.bloque3:hover {
+  transform: translate(20px, 5px);
+  filter: brightness(108%);
+}
+
+.bloque4 {
+  position: relative;
+  top: -750px;
+  left: 55%;
+  background-color: #F1B75F;
+  border-radius: 10px;
+  height: 110px;
+  width: 300px;
+  opacity: 95%;
+  transition: 1s;
+}
+
+.trainer4 {
+  position: absolute;
+  left: 125px;
+  top: 25px;
+  float: right;
+  text-align: right;
+}
+
+.bloque4:hover {
+  transform: translate(20px, 5px);
+  filter: brightness(108%);
+}
+
+.bloque5 {
+  position: absolute;
+  top: 245px;
+  left: 55%;
+  background-color: #F1B75F;
+  border-radius: 10px;
+  height: 110px;
+  width: 300px;
+  opacity: 95%;
+  transition: 1s;
+}
+
+.trainer5 {
+  position: absolute;
+  left: 115px;
+  top: 25px;
+  float: right;
+  text-align: right;
+  opacity: 90;
+}
+
+.bloque5:hover {
+  transform: translate(20px, 5px);
+  filter: brightness(108%);
+}
+
+.bloque6 {
+  position: absolute;
+  top: 405px;
+  left: 55%;
+  background-color: #F1B75F;
+  border-radius: 10px;
+  height: 110px;
+  width: 300px;
+  opacity: 95%;
+  transition: 1s;
+}
+
+.bloque6:hover {
+  transform: translate(20px, 5px);
+  filter: brightness(108%);
+}
+
+.trainer6 {
+  position: absolute;
+  left: 125px;
+  top: 25px;
+  float: right;
+  text-align: right;
+}
+
+
+/* --------------------------------------- RULES  ---------------------------------------  */
+h4 {
+  position: relative;
+  margin: auto;
+  top: 100px;
+  font-size: 40px;
+  color: #fff;
+  font-family: "Newsreader";
+}
+
+.rules_box {
+  position: relative;
+  margin: auto;
+  top: 5px;
+  height: 620px;
+  width: 1200px;
+  line-height: 30px;
+}
+
+.rules {
+  position: relative;
+  margin: auto;
+  top: 120px;
+  text-align: center;
+  color: #fff;
+}
+
+/* --------------------------------------- CONTACT  ---------------------------------------  */
+.contact {
+  display: grid;
+  width: 1200px;
+  position: relative;
+  top: -108px;
+  margin: auto;
+  color: white;
+}
+
+.gmail {
+  position: relative;
+}
+
+.contact {
+  display:flex;
+  position:relative;
+  width: 920px;
+  font-family: "Newsreader";
+}
+
+.item {
+  display: grid;
+  grid-auto-rows: auto auto;
+  width: 200px;
+}
+
+.item i {
+  color:#ffffff;
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+}
+
+.item span {
+  font-size: 14px;
+}
+
+#loc1 {
+  position: relative;
+  top: -15px;
+}
+
+#loc2 {
+  position: relative;
+  top: -10px;
+}
+
+
+/* --------------------------------------- QR  ---------------------------------------  */
+#membercardbody {
+  height: 600px;
+  overflow-y: hidden;
+}
+.qr {
+  position: relative;
+  margin: auto;
+  position: relative;
+  top: -550px;
+  /* ajustar el espacio entre la imagen y la parte superior */
+}
+
+.qr img {
+  max-width: 30%;
+  /* ajustar el tamaño de la imagen QR */
+  height: auto;
+}
+
+
+/* --------------------------------------- REGISTRATION  ---------------------------------------  */
+#registrationbody {
+  height: 600px;
+  overflow-y: hidden;
+}
+
+#subsTitle {
+  color: white;
+  position: absolute;
+  top: 110px;
+  left: 200px;
+}
+
+.gymSubsForm {
+  position: absolute;
+  top: 135px;
+  font-family: 'Calibri';
+  font-size: 18px;
+  color: #58022d;
+  left: 16%;
+  background-color: #F1B75F;
+  border-radius: 5px;
+  height: 380px;
+  width: 400px;
+  padding: 5px;
+}
+
+.regForm {
+  position: absolute;
+  top: 100px;
+  font-family: 'Calibri';
+  font-size: 18px;
+  color: #800040;
+  left: 55%;
+  background-color: #F1B75F;
+  border-radius: 5px;
+  height: 450px;
+  width: 400px;
+}
+
+.regInput {
+  padding: 6px;
+  border-radius: 5px;
+  max-width: 140px;
+}
+
+.myTable {
+  position: relative;
+  top: -15px;
+  margin: auto;
+}
+
+table td {
+  max-width: 200px;
+  width: 180px;
+  text-align: left;
+  border: 0px solid red;
+  position: relative;
+  left: 15px;
+}
+
+select {
+  font-family: 'Calibri';
+  font-size: 15px;
+  padding: 5px;
+  color: #58022d;
+  border-radius: 5px;
+  width: 178px;
+}
+
+.divs {
+  position: relative;
+  line-height: 15px;
+}
+
+.sendReset {
+  display: flex;
+  position: absolute;
+  margin-left: auto;
+  top: 400px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#submitButton, #resetButton {
+  border-radius: 5px;
+  color: #fff;
+  background-color: #800040;
+  font-size: 15px;
+  padding: 8px;
+  margin: 5px;
+}
+
+#submitButton:hover, #resetButton:hover {
+  background-color: #ac0056;
+  cursor: pointer;
+}
+
+
+/* --------------------------------------- SUBSCRIPTIONS  ---------------------------------------  */
+#subscriptionsbody {
+  height: 600px;
+  overflow-y: hidden;
+}
+
+.fondo {
+  filter: blur(40px);
+}
+
+#tableGyms {
+  position:absolute;
+  top: 65px;
+  left: -5px;
+  margin-left: 20px;
+  margin-right: 10px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: white;
+}
+
+#tableGyms tr {
+  position: relative;
+  background-color: white;
+  color: #800040;
+}
+
+#tableGyms td {
+  padding: 8px;
+  position: relative;
+  left: -0px;
+  text-align: center;
+}
+
+#tableGyms tr:hover {
+  background-color: #ac0056;
+  cursor: pointer;
+  color:white;
+}
+
+#gyms {
+  position: relative;
+  top: 65%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tableSubs {
+  background-color: white;
+  color: #800040;
+  border-collapse: collapse;
+  position: relative;
+  top: 247px;
+  width: 95%;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.tableSubs td {
+  text-align: center;
+  position: relative;
+  left: 0px;
+}
+
+.tableSubs td:hover {
+  background-color: #ac0056;
+  cursor: pointer;
+  color: white;
+}
+
+.selected {
+  box-shadow: inset 0 0 0 4px #800040;
+}
+
+.selector {
+  height: 50px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+

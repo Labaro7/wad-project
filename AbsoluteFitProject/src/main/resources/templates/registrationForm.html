@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../../style.css?version=52">
+
+</head>
+<body id="registrationbody">
+<section class="container">
+    <div class="image-container">
+        <img src="https://img.freepik.com/foto-gratis/pesos-ejercicio-pesas-fuerte-atletica_1139-709.jpg?w=996&t=st=1682073777~exp=1682074377~hmac=620702133e42b980b1ba622263345b01c08dd86fcc06089f82d2b6ab11845996" class="fondo" alt="gym">
+        <div class="button-container">
+            <a href="/">Home</a>
+        </div>
+
+        <form id="regForm" method="post" action="registration/add-client" onsubmit="return validate()">
+            <div class="gymSubsForm">
+                <h3>SELECT GYM AND SUBSCRIPTION</h3>
+                <table id="tableGyms">
+                    <tr id="Liberty" name="row" class="selected">
+                        <td name="cell" onclick="selectRow(this.parentNode)">AbsoluteFit Liberty</td>
+                        <td name="cell" onclick="selectRow(this.parentNode)">Garden Route</td>
+                        <td name="cell" onclick="selectRow(this.parentNode)">678467283</td>
+                    </tr>
+                    <tr id="Coccor" name="row">
+                        <td name="cell" onclick="selectRow(this.parentNode)">AbsoluteFit Coccor</td>
+                        <td name="cell" onclick="selectRow(this.parentNode)">Old Boulevard</td>
+                        <td name="cell" onclick="selectRow(this.parentNode)">646789823</td>
+                    </tr>
+                    <tr id="Pipera" name="row">
+                        <td name="cell" onclick="selectRow(this.parentNode)">AbsoluteFit Pipera</td>
+                        <td name="cell" onclick="selectRow(this.parentNode)">Providence Passages</td>
+                        <td name="cell" onclick="selectRow(this.parentNode)">637849023</td>
+                    </tr>
+                    <tr id="Vitan" name="row">
+                        <td name="cell" onclick="selectRow(this.parentNode)">AbsoluteFit<br> Vitan</td>
+                        <td name="cell" onclick="selectRow(this.parentNode)">Starlight Avenue</td>
+                        <td name="cell" onclick="selectRow(this.parentNode)">678392026</td>
+                    </tr>
+                </table>
+                <div id="subs">
+                    <table class="tableSubs">
+                        <tr>
+                            <td id="Student" name="column" class="selected" >
+                                <div class="selector" onclick="selectColumn(this.parentNode)">Student</div>
+                            </td>
+                            <td id="Normal" name="column">
+                                <div class="selector" onclick="selectColumn(this.parentNode)">Normal</div>
+                            </td>
+                            <td id="Family" name="column">
+                                <div class="selector" onclick="selectColumn(this.parentNode)">Family</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="regForm">
+                <h3>REGISTRATION FORM</h3>
+                <table class="myTable">
+                    <tr>
+                        <td>
+                            <label>
+                                Name<br>
+                                <input class="regInput" id="name" name="name"/><br>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                Username<br>
+                                <input class="regInput" id="username" name="username"/><br>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                Password<br>
+                                <input class="regInput" id="password" name="password" type="password"/><br>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                Repeat password<br>
+                                <input class="regInput" id="repeatPassword" type="password"/><br>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                ID Card<br>
+                                <input class="regInput" id="idCard" name="idCard"/><br>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                Birth Date<br>
+                                <input class="regInput" type="date" id="birthDate" name="birthDate"/><br>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                Email<br>
+                                <input class="regInput" id="email" name="email" /><br>
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                Telephone<br>
+                                <input class="regInput" id="telephone" name="telephone" maxlength="9" size="7"/><br>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="malefemale">
+                                <input type="radio" id="male" name="gender" value="male" checked="checked"/> Male<br>
+                                <input type="radio" id="female" name="gender" value="female"/> Female
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                Country<br>
+                                <select id="country" name="country">
+                                    <option value="">Please choose a country</option>
+                                    <option value="Romania">Romania</option>
+                                    <option value="Spain">Spain</option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+
+                <input id="gymName" name="gymName" hidden="hidden" th:value="Liberty">
+                <input id="subName" name="subName" hidden="hidden" th:value="Student">
+
+                <div class="sendReset">
+                    <button type="submit" id="submitButton">Done</button>
+                    <input type="reset" id="resetButton" name="reset" value="Reset">
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<script th:src="@{/registration.js}" defer></script>
+</body>
+</html>

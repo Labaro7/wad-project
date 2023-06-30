@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/style.css?version=53}">
+    <script></script>
+</head>
+
+<body id="homebody">
+    <section class="container">
+        <div class="image-container">
+            <img src="https://img.freepik.com/foto-gratis/pesos-ejercicio-pesas-fuerte-atletica_1139-709.jpg?w=996&t=st=1682073777~exp=1682074377~hmac=620702133e42b980b1ba622263345b01c08dd86fcc06089f82d2b6ab11845996"
+                class="img" alt="gym">
+            <div th:if="${authenticated}">
+                <div class="button-container">
+                    <a href="#prices">Prices</a>
+                    <a href="#table">Schedule</a>
+                    <a href="#trainers">Trainers</a>
+                    <a href="/membercard">Member Card</a>
+                    <a href="#rules-box">Our Rules / Contact</a>
+                    <div class="welcome">
+                        <div class="content">
+                            <div>Welcome back,&nbsp;</div>
+                            <div th:text="${name}"></div>
+                        </div>
+                        <h3 class="welcomeH3">Workout hard and enjoy!</h3>
+                    </div>
+                </div>
+            </div>
+            <div th:unless="${authenticated}">
+                <div class="button-container">
+                    <a href="#prices">Prices</a>
+                    <a href="#table">Schedule</a>
+                    <a href="#trainers">Trainers</a>
+                    <a href="#rules-box">Our Rules / Contact</a>
+                    <a href="/registration">Sign Up</a>
+                </div>
+                <form name="loginForm" class="loginForm" action="/login" method="post">
+                    <div class="formu">
+                        <div class="userPass">
+                            <div class="username">
+                                <label for="username"><br>
+                                    <input id="username" name="username" class="user-input" placeholder="User" />
+                                </label>
+                            </div>
+                            <div class="pass">
+                                <label for="password"><br>
+                                    <input type="password" id="password" name="password" class="password-input"
+                                           placeholder="Password" />
+                                </label>
+                            </div>
+                        </div>
+                        <div class="boton">
+                            <input type="submit" id="login" name="login" value="Log in" />
+                        </div>
+                    </div>
+                </form>
+                <h1>AbsoluteFit</h1>
+                <h2>IT'S YOUR LIFESTYLE</h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="prices" id="prices">
+         <img src="https://img.freepik.com/foto-gratis/pesos-ejercicio-pesas-fuerte-atletica_1139-709.jpg?w=996&t=st=1682073777~exp=1682074377~hmac=620702133e42b980b1ba622263345b01c08dd86fcc06089f82d2b6ab11845996" 
+        class="fondoprices" alt="gym">
+        <figure id="img1">
+            <img src="https://architect.bjc.es/wp-content/uploads/2019/06/90078304_m.jpg" alt="" class="img1">
+            <div class="text-img1">
+               
+                <div class="title1">Student Discount<br></div>
+                <br>
+                1 student 100€<br>
+                2 students 80€ each<br>
+                <br>
+                4 month gym membership
+            </div>
+        </figure>
+
+        <figure id="img2">
+            <img src="https://images.unsplash.com/photo-1616279967983-ec413476e824?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=852&q=80"
+                alt="" class="img2">
+            <div class="text-img2">
+                <div class="title2">Normal Prices</div>
+                <br>
+                1 month 32€<br>
+                2 month 60€<br>
+                3 month 90€<br>
+            </div>
+
+        </figure>
+
+        <figure id="img3">
+            <img src="https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png" alt=""
+                class="img3">
+            <div class="text-img3">
+                <div class="title3">Family Account<br></div>
+                <br>
+                3 members 28€ each<br>
+                4 members 25€ each<br>
+                <br>
+                1 month
+            </div>
+        </figure>
+    </div>
+
+    <div class="table" id="table">
+        <table class="tabl">
+            <thead class="head">
+                <tr>
+                    <th>HOURS</th>
+                    <th>MONDAY</th>
+                    <th>TUESDAY</th>
+                    <th>WEDNESDAY</th>
+                    <th>THURSDAY</th>
+                    <th>FRIDAY</th>
+                    <th>SATURDAY</th>
+                    <th>SUNDAY</th>
+                </tr>
+            </thead>
+            <tbody class="body">
+                <tr>
+                    <td>08:00</td>
+                    <td>Legs</td>
+                    <td>Triceps & Abs</td>
+                    <td>Spinning</td>
+                    <td>Shoulders</td>
+                    <td>Shoulders</td>
+                    <td>Zumba</td>
+                    <td>Shoulders</td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td>Yoga</td>
+                    <td>Zumba</td>
+                    <td>Pilates</td>
+                    <td>Zumba</td>
+                    <td>Spinning</td>
+                    <td>Pilates</td>
+                    <td>Yoga</td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td>BodyPump</td>
+                    <td>Spinning</td>
+                    <td>Yoga</td>
+                    <td>Triceps & Back</td>
+                    <td>Back</td>
+                    <td>Shoulders</td>
+                    <td>Back</td>
+                </tr>
+                <tr>
+                    <td>16:00</td>
+                    <td>Spinning</td>
+                    <td>Legs</td>
+                    <td>Zumba</td>
+                    <td>Spinning</td>
+                    <td>Legs</td>
+                    <td>Triceps & Abs</td>
+                    <td>Zumba</td>
+                </tr>
+                <tr>
+                    <td>18:00</td>
+                    <td>Pilates</td>
+                    <td>Bootcamp</td>
+                    <td>BodyPump</td>
+                    <td>Abs</td>
+                    <td>Pilates</td>
+                    <td>Yoga</td>
+                    <td>Spinning</td>
+                </tr>
+                <tr>
+                    <td>20:00</td>
+                    <td>Triceps & Abs</td>
+                    <td>Legs</td>
+                    <td>Shoulders</td>
+                    <td>Pilates</td>
+                    <td>Triceps & Abs</td>
+                    <td>Spinning</td>
+                    <td>Legs</td>
+
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="trainers" id="trainers">
+        <img src="https://img.freepik.com/foto-gratis/pesos-ejercicio-pesas-fuerte-atletica_1139-709.jpg?w=996&t=st=1682073777~exp=1682074377~hmac=620702133e42b980b1ba622263345b01c08dd86fcc06089f82d2b6ab11845996" 
+        class="fondotrainers" alt="gym">
+        <div class="bloque1">
+            <div class="circulo">
+                <img src="https://entrenadorpersonaltsf.com/wp-content/uploads/2017/09/perfil-ruben-entrenador-personal-barcelona-e1509211224992.png"
+                    class="train" alt="gym">
+            </div>
+            <div class="trainer1">
+                OLIVER<br>
+                Age:39<br>
+                Gmail: oliver@gmail.com<br>
+            </div>
+        </div>
+
+        <div class="bloque2">
+            <div class="circulo">
+                <img src="https://guillermopalop.com/wp-content/uploads/2022/01/Guille-entrenador.png" class="train"
+                    alt="gym">
+            </div>
+            <div class="trainer2">
+                HARRY<br>
+                Age:25<br>
+                Gmail: harry@gmail.com<br>
+            </div>
+        </div>
+
+        <div class="bloque3">
+            <div class="circulo">
+                <img src="https://assets.setmore.com/website/v2/images/industry-pages/personal-trainer/personal-trainer-woman.png"
+                    class="train" alt="gym">
+            </div>
+            <div class="trainer3">
+                NICOLE<br>
+                Age:32<br>
+                Gmail: nick@gmail.com<br>
+            </div>
+        </div>
+
+        <div class="bloque4">
+            <div class="circulo">
+                <img src="https://entrenadorpersonaloriol.com/wp-content/uploads/2022/01/entrenador-personal-en-barcelona-marc..webp"
+                    class="train" alt="gym">
+            </div>
+            <div class="trainer4">
+                JACK<br>
+                Age: 25<br>
+                Gmail: jack@gmail.com<br>
+            </div>
+        </div>
+
+        <div class="bloque5">
+            <div class="circulo">
+                <img src="https://entrenadorpersonaltsf.com/wp-content/uploads/2017/09/perfil-sergio-entrenador-personal-barcelona-e1509211204656.png"
+                    class="train" alt="gym">
+            </div>
+            <div class="trainer5">
+                JACOB<br>
+                Age:34<br>
+                Gmail: jacob@gmail.com<br>
+            </div>
+        </div>
+
+        <div class="bloque6">
+            <div class="circulo">
+                <img src="https://assets.setmore.com/website/v2/images/industry-pages/personal-trainer/male-personal-trainer.png"
+                    class="train" alt="gym">
+            </div>
+            <div class="trainer6">
+                DAOUD<br>
+                Age:27<br>
+                Gmail: juls@gmail.com<br>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="rules_box" id="rules-box">
+        <h4>GYM RULES</h4>
+        <div class="rules">
+            - Dress for success. <br>
+            - Get to class on time.<br>
+            - Respect the machines.<br>
+            - Clean up after yourself. <br>
+            - Give people personal space. <br>
+            - Avoid making calls, and use headphones.<br>
+            - Make friends, and only give advice when asked!<br>
+        </div>
+    </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="item">
+          <i class="material-icons">email</i>
+          <span>AbsoluteFit@gmail.com</span>
+        </div>
+      
+        <div class="item">
+          <i class="material-icons">instagram</i>
+          <span>Instagram: AbsoluteFit</span>
+        </div>
+      
+        <div class="item">
+          <i class="material-icons">facebook</i>
+          <span>Facebook: AbsoluteFit</span>
+        </div>
+      
+        <div class="item">
+        <i class="material-icons">phone</i>
+          <span>Phone number: 83276467</span>
+        </div>
+      
+        <div class="item">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><br>
+          <i class="material-icons" id="loc1">location_on</i><br>
+          <span id="loc2">ADDRESS: Cocor Avenue, Sector 3, 030107</span>
+        </div>
+      </div>
+</body>
+</html>
